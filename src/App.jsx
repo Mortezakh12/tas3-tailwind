@@ -13,9 +13,9 @@ const App = () => {
                 دوره حرفه ای متخصص ری اکت
               </h3>
               <div className="flex items-start justify-between gap-x-8">
-                <p className="text-xs text-text--secondary-900">
+                <p className="text-xs text-text--price-blue">
                   6,298,000
-                  <span className="mr-2 opacity-50 text-text--price-100">
+                  <span className="mr-2 opacity-50 text-text--secondary-800">
                     تومان
                   </span>
                 </p>
@@ -48,9 +48,9 @@ const App = () => {
                 دوره حرفه ای متخصص ری اکت
               </h3>
               <div className="flex items-start justify-between gap-x-8">
-                <p className="text-xs text-text--secondary-900">
+                <p className="text-xs text-text--price-blue">
                   6,298,000
-                  <span className="mr-2 opacity-50 text-text--price-100">
+                  <span className="mr-2 opacity-50 text-text--secondary-800">
                     تومان
                   </span>
                 </p>
@@ -107,15 +107,15 @@ const App = () => {
           </span>
           <p className="text-xl font-bold text-text--primary-800">پرداخت</p>
         </div>
-        <div className="border-b-2 border-gray-200 opacity-50 "></div>
-        <div className="flex justify-between bg-slate-100 ">
-          <div>
-            <p>جمع دوره ها</p>
-            <p>+4،250،000</p>
+        <div className="mb-1 border-b-2 border-gray-200 opacity-50 "></div>
+        <div className="flex flex-col gap-2 p-4">
+          <div className="flex justify-between gap-x-32">
+            <p className="font-bold text-text--secondary-700">جمع دوره ها</p>
+            <p className="text-text--price-blue">+4،250،000</p>
           </div>
-          <div>
-            <p>تخفیف ها</p>
-            <p>-750،000</p>
+          <div className="flex justify-between gap-x-32">
+            <p className="font-bold text-text--secondary-700">تخفیف ها</p>
+            <p className="font-extrabold text-text--price-red">-750،000</p>
           </div>
           <div></div>
         </div>
