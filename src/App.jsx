@@ -1,21 +1,21 @@
 const App = () => {
   return (
     //Mobile First Design//
-    <div className="flex flex-col items-center h-screen">
+    <div className="flex flex-col items-center justify-between w-full h-screen ">
       {/* header */}
       <h1 className="text-3xl font-bold text--primary-800">سبد دوره های شما</h1>
-      <div>
+      <div className="flex flex-col gap-4">
         <div className="">
           <div className="flex justify-between max-w-xs p-4 bg-white gap-x-4 rounded-xl">
             <img className="w-1/3" src="/src/assets/img/Rectangle 21.png"></img>
-            <div className="flex flex-col justify-between">
+            <div className="flex flex-col justify-between ">
               <h3 className="text-sm font-bold text--primary-900">
                 دوره حرفه ای متخصص ری اکت
               </h3>
               <div className="flex items-start justify-between gap-x-8">
-                <p className="text-xs text-text--price-blue">
+                <p className="text-xs font-bold text-text--price-blue">
                   6,298,000
-                  <span className="mr-2 opacity-50 text-text--secondary-800">
+                  <span className="mr-2 text-[9px] opacity-50 text-text--secondary-800">
                     تومان
                   </span>
                 </p>
@@ -48,9 +48,9 @@ const App = () => {
                 دوره حرفه ای متخصص ری اکت
               </h3>
               <div className="flex items-start justify-between gap-x-8">
-                <p className="text-xs text-text--price-blue">
+                <p className="text-xs font-bold text-text--price-blue">
                   6,298,000
-                  <span className="mr-2 opacity-50 text-text--secondary-800">
+                  <span className="mr-2 opacity-50 text-text--secondary-800 text-[9px]">
                     تومان
                   </span>
                 </p>
@@ -76,7 +76,7 @@ const App = () => {
           <div className="bg-white rounded-lg"></div>
         </div>
       </div>
-      <div className="flex flex-col w-full max-w-xs bg-white rounded-xl">
+      <div className="flex flex-col w-full max-w-xs py-4 bg-white rounded-xl">
         <div className="flex items-center ">
           <span className="p-3">
             <svg
@@ -111,16 +111,18 @@ const App = () => {
         <div className="flex flex-col gap-2 p-4">
           <div className="flex justify-between gap-x-32">
             <p className="font-bold text-text--secondary-700">جمع دوره ها</p>
-            <p className="text-text--price-blue">+4،250،000</p>
+            <p className="font-extrabold text-text--price-blue">4،250،000+</p>
           </div>
           <div className="flex justify-between gap-x-32">
             <p className="font-bold text-text--secondary-700">تخفیف ها</p>
-            <p className="font-extrabold text-text--price-red">-750،000</p>
+            <p className="font-extrabold text-text--price-red">750،000-</p>
           </div>
-          <div></div>
         </div>
-        <div>3</div>
-        <div>4</div>
+          <div className="mb-1 border-b-2 border-gray-200 border-dashed opacity-50 "></div>
+        <p className="mt-4 text-xs text-center text-text--secondary-700">کد تخفیف دارم!</p>
+        <button className="p-4 mx-10 mt-4 text-white bg-text--price-blue rounded-xl">
+          پرداخت 3.500.000&nbsp; <span className="text-[9px]">تومان</span>
+        </button>
       </div>
     </div>
   );
